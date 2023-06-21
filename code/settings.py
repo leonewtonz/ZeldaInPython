@@ -1,3 +1,6 @@
+import os
+
+
 # Basic game setup
 
 WIDTH       = 1280

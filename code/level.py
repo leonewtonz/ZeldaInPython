@@ -2,6 +2,8 @@ import pygame
 from settings import *
 from tile import Tile
 from player import Player
+import os
+
 
 class Level:
     def __init__(self):
