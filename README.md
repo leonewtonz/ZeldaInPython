@@ -1,6 +1,8 @@
 # ZeldaInPython
 
-- VS Code Shortcut: https://cult.honeypot.io/reads/20-vs-code-shortcuts-developers/
+- VS Code Shortcut:
+    - https://cult.honeypot.io/reads/20-vs-code-shortcuts-developers/
+    - https://davidamos.dev/5-vs-code-shortcuts/
 
 This is my personal project.
 Credited to https://github.com/SpyderGamer/Zelda-with-Python/
