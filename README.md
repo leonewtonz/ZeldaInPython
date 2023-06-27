@@ -30,3 +30,6 @@ Important concept in pygame design
 ## Overlap
 - The other of which one top is now based on the order when sprites were created. This create silly image. Because some sprite (rock) was create after player - this happen because the camera re-draw)
 - This is why we need YSort, the sprites have higher y value will be on top
+
+# Finished most basic mechanic of game. The rest will focus more on graphics.
+- This is when we use Tiled Application (Free) to organize the map, player, enemy
