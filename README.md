@@ -15,8 +15,18 @@ Important concept in pygame design
 -  group for sprites that player cab collide with
 
 
-@ Jun 26, 2023
-# Collision
+
+# Collision (@ Jun 26, 2023)
 - Apply horizontal movement
 - Check horizontal (x) collisions
 - Do the same for vertical movement
+
+
+# Camera and Overlap (@ Jun 26, 2023)
+- Customizing the group
+- Group's purpose:
+  - Store and draw sprites
+  - Call the update method
+## Overlap
+- The other of which one top is now based on the order when sprites were created. This create silly image. Because some sprite (rock) was create after player - this happen because the camera re-draw)
+- This is why we need YSort, the sprites have higher y value will be on top
