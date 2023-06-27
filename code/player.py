@@ -6,7 +6,7 @@ import os
 class Player(pygame.sprite.Sprite):
     def __init__(self,pos,groups,obstacle_sprites):
         super().__init__(groups)
-        self.image = pygame.image.load('../graphics/test/player.png').convert_alpha()
+        self.image = pygame.image.load('/Users/trinhphuong/Documents/GitHub/ZeldaInPython/graphics/test/player.png').convert_alpha()
         self.rect = self.image.get_rect(topleft = pos)
 
         self.direction = pygame.math.Vector2()
@@ -36,8 +36,8 @@ class Player(pygame.sprite.Sprite):
             self.direction = self.direction.normalize()
 
         self.rect.x += self.direction.x * speed
+        self.collision('horizontal')
        
-
         self.rect.y += self.direction.y * speed
         self.collision('vertical')
       

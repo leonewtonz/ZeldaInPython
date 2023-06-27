@@ -10,5 +10,5 @@ class Tile(pygame.sprite.Sprite):
     def __init__(self,pos,groups):
         super().__init__(groups)
         # ../ mean to go up one directory. Currently in /code
-        self.image = pygame.image.load('../graphics/test/rock.png').convert_alpha()
+        self.image = pygame.image.load('/Users/trinhphuong/Documents/GitHub/ZeldaInPython/graphics/test/rock.png').convert_alpha()
         self.rect = self.image.get_rect(topleft = pos)
