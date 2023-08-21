@@ -10,6 +10,9 @@ class Tile(pygame.sprite.Sprite):
     def __init__(self,pos,groups):
         super().__init__(groups)
         # ../ mean to go up one directory. Currently in /code
-        self.image = pygame.image.load('d:\OneDrive\Documents\GitHub\ZeldaInPython\graphics\\test\\rock.png').convert_alpha()
+        path = os.getcwd()
+        print(path)
+        rock = os.path.join(path, "graphics/test", "rock.png")
+        self.image = pygame.image.load(rock).convert_alpha()
         self.rect = self.image.get_rect(topleft = pos)
         self.hitbox = self.rect.inflate(0,-10)

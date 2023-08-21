@@ -6,7 +6,8 @@ import os
 class Player(pygame.sprite.Sprite):
     def __init__(self,pos,groups,obstacle_sprites):
         super().__init__(groups)
-        self.image = pygame.image.load('/Users/trinhphuong/Documents/GitHub/ZeldaInPython/graphics/test/player.png').convert_alpha()
+        player_icon = os.path.join(os.getcwd(), "graphics/test", "player.png")
+        self.image = pygame.image.load(player_icon).convert_alpha()
         self.rect = self.image.get_rect(topleft = pos)
         self.hitbox = self.rect.inflate(0,-26)
 
