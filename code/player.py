@@ -14,7 +14,7 @@ class Player(pygame.sprite.Sprite):
         self.direction = pygame.math.Vector2()
         self.speed = 5
 
-        self.obstacle_sprites = obstacle_sprites
+        self.obstacle_sprites = obstacle_sprites # This make the player know all the obstacle_sprites inside the level
 
     def input(self):
         keys = pygame.key.get_pressed()

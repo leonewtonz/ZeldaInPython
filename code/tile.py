@@ -11,8 +11,7 @@ class Tile(pygame.sprite.Sprite):
         super().__init__(groups)
         # ../ mean to go up one directory. Currently in /code
         path = os.getcwd()
-        print(path)
-        rock = os.path.join(path, "graphics/test", "rock.png")
-        self.image = pygame.image.load(rock).convert_alpha()
+        rock_icon = os.path.join(path, "graphics/test", "rock.png")
+        self.image = pygame.image.load(rock_icon).convert_alpha()
         self.rect = self.image.get_rect(topleft = pos)
         self.hitbox = self.rect.inflate(0,-10)
